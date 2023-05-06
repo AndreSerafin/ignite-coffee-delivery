@@ -12,4 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 1rem;
   }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+  }
 `

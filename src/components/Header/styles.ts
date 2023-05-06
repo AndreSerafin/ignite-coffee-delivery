@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const HeaderComponent = styled.header`
   display: flex;
   flex-wrap: wrap;
-  flex: 1;
   justify-content: space-between;
-  margin: 2rem 16rem;
+  width: 70rem;
+  margin: 2rem 10rem;
 `
 export const ActionsSession = styled.nav`
   display: flex;

@@ -1,4 +1,7 @@
+import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { IntroSession } from './styles'
+
+import introImage from '../../assets/imgs/intro-image.png'
 
 export function Home() {
   return (
@@ -10,12 +13,24 @@ export function Home() {
           hora
         </h2>
         <ul>
-          <li>Compra simples e segura</li>
-          <li>Entrega rápida e rastreada</li>
-          <li>Embalagem mantém o café intacto</li>
-          <li>O café chega fresquinho até você</li>
+          <li>
+            <ShoppingCart size={32} weight="fill" /> Compra simples e segura
+          </li>
+
+          <li>
+            <Package size={32} weight="fill" />
+            Embalagem mantém o café intacto
+          </li>
+          <li>
+            <Timer size={32} weight="fill" />
+            Entrega rápida e rastreada
+          </li>
+          <li>
+            <Coffee size={32} weight="fill" />O café chega fresquinho até você
+          </li>
         </ul>
       </div>
+      <img src={introImage} alt="" />
     </IntroSession>
   )
 }

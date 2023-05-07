@@ -7,10 +7,14 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body,input, textarea, button {
+  body,input, textarea, p, button {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+  }
+
+  h1,h2,h3,h4,h5 {
+    font-family: 'Baloo 2';
   }
 
   body{
@@ -18,5 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     background: #fafafa;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 `

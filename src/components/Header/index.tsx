@@ -9,7 +9,7 @@ export function Header() {
       <ActionsSession>
         <div>
           <MapPin size={22} weight="fill" />
-          <p>Anápolis, GO</p>
+          <p>Porto Alegre, RS</p>
         </div>
         <NavLink to={'/'}>
           <ShoppingCart size={22} weight="fill" />

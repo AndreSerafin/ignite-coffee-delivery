@@ -8,8 +8,10 @@ import {
 
 import introImage from '../../assets/imgs/intro-image.png'
 import { CoffeeCard } from './components'
+import { coffees } from '../../coffees'
 
 export function Home() {
+  console.log(coffees)
   return (
     <HomeContainer>
       <IntroSession>
@@ -45,11 +47,9 @@ export function Home() {
       <CoffeeContainer>
         <h2>Nossos cafés</h2>
         <CoffeeList>
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
-          <CoffeeCard />
+          {coffees.map((coffee) => {
+            return <CoffeeCard coffeeInfos={coffee} key={coffee.coffeeName} />
+          })}
         </CoffeeList>
       </CoffeeContainer>
     </HomeContainer>

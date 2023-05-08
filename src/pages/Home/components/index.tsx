@@ -1,8 +1,15 @@
 import { ActionsSession, CardContainer, PriceSession, Select } from './styles'
 import expressoCoffee from '../../../assets/coffee-imgs/expresso.png'
 import { Minus, Plus, ShoppingCart } from 'phosphor-react'
+import { coffees } from '../../../coffees'
 
-export function CoffeeCard() {
+type CoffeeType = typeof coffees
+
+interface PropsType {
+  coffeeInfos: CoffeeType
+}
+
+export function CoffeeCard({ coffeeInfos }: PropsType) {
   return (
     <CardContainer>
       <img src={expressoCoffee} alt="" />

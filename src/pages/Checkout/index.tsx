@@ -2,6 +2,7 @@ import { CreditCard, CurrencyDollar, MapPinLine } from 'phosphor-react'
 import {
   AdressSession,
   CheckoutContainer,
+  ConfirmationSession,
   Form,
   InputSession,
   PaymentSession,
@@ -27,7 +28,7 @@ export function Checkout() {
               <InputSession>
                 <input type="text" placeholder="CEP" />
                 <input type="text" placeholder="Rua" />
-                <input type="number" placeholder="Número" />
+                <input type="number" placeholder="Número" min={0} />
                 <div>
                   <input
                     id="complement"
@@ -74,6 +75,21 @@ export function Checkout() {
           <SelectedCoffeesSession>
             <SelectedCoffeeCard />
             <SelectedCoffeeCard />
+            <ConfirmationSession>
+              <p>
+                <span>Total de itens</span>
+                <span>R$ 29,70</span>
+              </p>
+              <p>
+                <span>Entrega</span>
+                <span>R$ 3,50</span>
+              </p>
+              <p>
+                <span>Total</span>
+                <span>R$ 33,20</span>
+              </p>
+              <button>CONFIRMAR PEDIDO</button>
+            </ConfirmationSession>
           </SelectedCoffeesSession>
         </div>
       </Form>

@@ -13,7 +13,13 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
   }
 
-  h1,h2,h3,h4,h5 {
+  :focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px ${(props) => props.theme['brand-yellow-dark']};
+    border-radius: 6px;
+  }
+
+  h1,h2,h3,h4,h5 {      
     font-family: 'Baloo 2';
   }
 
@@ -22,7 +28,6 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     background: #fafafa;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
   }
 `

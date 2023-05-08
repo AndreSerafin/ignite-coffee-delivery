@@ -16,10 +16,11 @@ export const ActionsSession = styled.nav`
   font-size: 0.875rem;
   line-height: 1.1375rem;
 
-  & div:first-child {
+  & button:first-child {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    border: none;
     background: ${(props) => props.theme['brand-purple-light']};
     color: ${(props) => props.theme['brand-purple-dark']};
     font-weight: 400;

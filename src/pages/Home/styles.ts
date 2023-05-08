@@ -96,6 +96,31 @@ export const IntroSession = styled.div`
       flex-direction: column;
     }
   }
+
+  @media (max-width: 780px) {
+    max-width: 60vw;
+    > div {
+      flex: 1;
+      flex-direction: column;
+      max-width: 60%;
+
+      h1 {
+        display: flex;
+        font-size: 2rem;
+      }
+
+      p {
+        margin: 1rem 0 4.125rem 0;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: ${(props) => props.theme['base-subtitle']};
+      }
+
+      img {
+        max-width: 30rem;
+      }
+    }
+  }
 `
 export const CoffeeContainer = styled.div`
   margin-bottom: 9.875rem;

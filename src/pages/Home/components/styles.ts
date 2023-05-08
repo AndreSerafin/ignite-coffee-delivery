@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
   align-items: center;
   text-align: center;
   width: 16rem;
+  max-height: 20rem;
   border-radius: 0.375rem 2.25rem;
 
   background: ${(props) => props.theme['base-card']};
@@ -20,6 +21,7 @@ export const CardContainer = styled.div`
     background-color: ${(props) => props.theme['brand-yellow-light']};
     color: ${(props) => props.theme['brand-yellow-dark']};
     font-size: 0.625rem;
+    text-transform: uppercase;
   }
   h3 {
     color: ${(props) => props.theme['base-subtitle']};

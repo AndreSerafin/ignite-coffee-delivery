@@ -6,7 +6,7 @@ export function CoffeeCard() {
   return (
     <CardContainer>
       <img src={expressoCoffee} alt="" />
-      <span>TRADICIONAL</span>
+      <span>tradicional</span>
       <h3>Expresso Tradicional</h3>
       <p>O tradicional café feito com água quente e grãos moídos</p>
       <PriceSession>

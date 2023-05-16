@@ -12,16 +12,22 @@ export const CardContainer = styled.div`
 
   background: ${(props) => props.theme['base-card']};
 
-  > span {
-    margin: 0.75rem 2.125rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 100px;
+  > div:nth-child(2) {
     margin-top: 0.75rem;
-    font-weight: bold;
-    background-color: ${(props) => props.theme['brand-yellow-light']};
-    color: ${(props) => props.theme['brand-yellow-dark']};
-    font-size: 0.625rem;
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 0 0.25rem;
+
+    > span {
+      padding: 0.25rem 0.5rem;
+      border-radius: 100px;
+      font-weight: bold;
+      background-color: ${(props) => props.theme['brand-yellow-light']};
+      color: ${(props) => props.theme['brand-yellow-dark']};
+      font-size: 0.625rem;
+      text-transform: uppercase;
+    }
   }
   h3 {
     color: ${(props) => props.theme['base-subtitle']};

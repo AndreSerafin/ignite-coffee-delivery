@@ -1,9 +1,14 @@
 import { ActionsSession, CardContainer, PriceSession, Select } from './styles'
 import expressoCoffee from '../../../assets/coffee-imgs/expresso.png'
 import { Minus, Plus, ShoppingCart } from 'phosphor-react'
-import { coffees } from '../../../coffees'
 
-type CoffeeType = typeof coffees
+interface CoffeeType {
+  coffeeName: string
+  categories: string[]
+  price: number
+  description: string
+  imgUrl: string
+}
 
 interface PropsType {
   coffeeInfos: CoffeeType
@@ -12,14 +17,18 @@ interface PropsType {
 export function CoffeeCard({ coffeeInfos }: PropsType) {
   return (
     <CardContainer>
-      <img src={expressoCoffee} alt="" />
-      <span>tradicional</span>
-      <h3>Expresso Tradicional</h3>
-      <p>O tradicional café feito com água quente e grãos moídos</p>
+      <img src={coffeeInfos.imgUrl} alt="" />
+      <div>
+        {coffeeInfos.categories.map((category) => {
+          return <span key={category}>{category}</span>
+        })}
+      </div>
+      <h3>{coffeeInfos.coffeeName}</h3>
+      <p>{coffeeInfos.description}</p>
       <PriceSession>
         <div>
           <span>
-            R$<span>9,90</span>
+            R$<span>{coffeeInfos.price.toString().padEnd(4, '0')}</span>
           </span>
         </div>
         <ActionsSession>

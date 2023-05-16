@@ -7,12 +7,12 @@ export const HomeContainer = styled.main`
 `
 
 export const IntroSession = styled.div`
+  background-image: url(${backgoundImage});
   padding: 5.875rem 0 6.75rem 0;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   align-self: center;
-  background-image: url(${backgoundImage});
   background-size: cover;
 
   > div {

@@ -166,3 +166,45 @@ export const PaymentSession = styled.div`
 export const SelectedCoffeesSession = styled.div`
   width: 28rem;
 `
+
+export const ConfirmationSession = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+  margin-top: 0;
+  background: ${(props) => props.theme['base-card']};
+  gap: 0.75rem;
+  border-bottom-left-radius: 44px;
+
+  p {
+    font-size: 0.875rem;
+    width: 100%;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: ${(props) => props.theme['base-text']};
+
+    span:last-child {
+      font-size: 1rem;
+    }
+  }
+
+  p:nth-child(3) {
+    span {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin: 0.8rem 2.5rem;
+    padding: 0.875rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background: ${(props) => props.theme['brand-yellow']};
+    color: ${(props) => props.theme['base-white']};
+  }
+`
